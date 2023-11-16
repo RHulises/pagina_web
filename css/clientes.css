@@ -1,0 +1,141 @@
+:root {
+    --verdefuerte: #053B50;
+    --verdeclaro: #64CCC5;
+    --azulbonito: #116D6E;
+    --rojolindo: #CD1818;
+    --cafesoso: #4E3636;
+    --marron: #321E1E;
+  }
+  
+  /* apply a natural box layout model to all elements, but allowing components to change */
+  html {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--marron);
+    font-size: 3.5rem;
+  }
+  
+  span {
+    color: var(--cafesoso);
+    font-size: 1.5rem;
+  }
+  
+  .fondo-nav {
+    background-color: var(--azulbonito);
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    
+    background-color: var(--azulbonito);
+    margin: 0 15%;
+  }
+  
+  .menu a {
+    color: black;
+    font-size: 1.5rem;
+    width: 15rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem 0;
+  }
+  
+  .menu a:hover{
+    background-color: var(--rojolindo);
+    color: whitesmoke;
+  }
+  .head-2 {
+    font-size: 3.2rem;
+    color: whitesmoke;
+    margin: 2.6rem 0;
+  }
+
+  .contenedor {
+    margin: 3rem auto;
+    background-color: var(--cafesoso);
+    width: 120rem;
+    height: auto;
+    padding-bottom: 3.25rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .sombra {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.67); 
+  }
+  .head-servicios {
+    color: whitesmoke;
+    font-size: 3.2rem;
+    padding-top: 3rem;
+  }
+
+  
+.footer {
+    background-color: var(--gris);
+    width: 120rem;
+    height: 3rem;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .margen-footer {
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+
+  
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 3px solid var(--marron);
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .ancha {
+    width: 40%;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  td{
+    background-color: var(--azulbonito);
+    font-size: 1.5rem;
+  }
+
+  th{
+    font-size: 2rem;
+  }

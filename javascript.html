@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de recipientes a presión</title>
+    <link rel="icon" type="image/x-icon" href="./img/java.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/calculadoras.css">
+</head>
+<body>
+    <h1>Héctor Ulises Ramos<span> Estudiante</span></h1>
+    <!-- Menu de navegación -->
+    <div class="fondo-nav">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="yo.html">Sobre mi</a>
+            <a href="contacto.html">Contacto</a>
+         </nav>
+    </div>
+
+
+    
+    <header class="header sombra">
+        <h1 class="head-1">Diseño de recipientes a presión</h1>
+        <img src="./img/favicon.png" widht="400" height="100" alt="Recipiente">
+    </header>
+
+    <main class="contenedor sombra">
+
+        <!-- Datos de entrada -->
+        <h2 class="head-2">Datos de entrada</h2>
+        <div class="contenedor-2">
+            <fieldset>
+                <legend>Variables de entrada</legend>
+                <div class="datos">
+                    <div class="dato">
+                        <label for="">Presión interna:</label>
+                        <input placeholder="MPa" class="input-data" type="number" name="" id="Presion">
+                    </div>
+                    <div class="dato">
+                        <label for="">Diámetro:</label>
+                        <input placeholder="metros" class="input-data" type="number" name="" id="Diametro">
+                    </div>
+                    <div class="dato">
+                        <label for="">Longitud:</label>
+                        <input placeholder="metros" class="input-data" type="number" name="" id="Longitud">
+                    </div>
+                    <div class="dato">
+                        <label for="">Material:</label>
+                        <select class="input-data" id="Material">
+                            <option value="1">SA-283 gr D</option>   
+                            <option value="2">SA-662 gr B</option>   
+                            <option value="3">SA-537</option>   
+                            <option value="4">SA-515 gr 60</option>   
+                            <option value="5">SA-516 gr 70</option>  
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">Eficiencia de la junta:</label>
+                        <select class="input-data" name="" id="Eficiencia">
+                            <option value="1">Radiografiado completo (100%)</option>   
+                            <option value="2">Radiografiado parcial (85%)</option>   
+                            <option value="3">Sin Radiografiado (75%)</option>  
+     
+                        </select> 
+                    </div>
+                    <div class="dato">
+                        <label for="">Nivel:</label>
+                        <input placeholder="metros" class="input-data" type="number" name="" id="Nivel">
+                    </div>
+                    <div class="dato">
+                        <label for="">Densidad:</label>
+                        <input placeholder="kg/m³" class="input-data" type="number" name="" id="Densidad">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!-- Datos de salida -->
+        <h2 class="head-2">Datos de salida</h2>
+        <div class="contenedor-2">
+            <fieldset>
+                <legend>Variables de salida</legend>
+                <div class="datos">
+                    <div class="dato">
+                        <label for="">Espesor calculado de las tapas:</label>
+                        <input disabled class="input-data" type="number" name="" id="espesorcalculadotapas">
+                    </div>
+                    <div class="dato">
+                        <label for="">Espesor comercial del tapas:</label>
+                        <select class="input-data" id="espesortapascomercial">
+                            <option value="1">1/8 pulgada</option>   
+                            <option value="2">1/4 pulgada</option>   
+                            <option value="3">3/8 pulgada</option>   
+                            <option value="4">5/8 pulgada</option>   
+                            <option value="5">3/4 pulgada</option>   
+                            <option value="6">7/8 pulgada</option>   
+                            <option value="7">1 pulgada</option>   
+                            <option value="8">1 1/4 pulgada</option>   
+                            <option value="9">1 1/2 pulgada</option>   
+                            <option value="10">1 3/4 pulgada</option>   
+                            <option value="11">2 pulgadas</option>   
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">Espesor calculado del cuerpo:</label>
+                        <input disabled  class="input-data" type="number" name="" id="espesorcalculadocuerpo">
+                    </div>
+                    <div class="dato">
+                        <label for="">Espesor comercial del cuerpo:</label>
+                        <select class="input-data" id="espesorcuerpocomercial">
+                            <option value="1">1/8 pulgada</option>   
+                            <option value="2">1/4 pulgada</option>   
+                            <option value="3">3/8 pulgada</option>   
+                            <option value="4">5/8 pulgada</option>   
+                            <option value="5">3/4 pulgada</option>   
+                            <option value="6">7/8 pulgada</option>   
+                            <option value="7">1 pulgada</option>   
+                            <option value="8">1 1/4 pulgada</option>   
+                            <option value="9">1 1/2 pulgada</option>   
+                            <option value="10">1 3/4 pulgada</option>   
+                            <option value="11">2 pulgadas</option>   
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">Peso del equipo vacío:</label>
+                        <input class="input-data" disabled type="number" id="pesovacio">
+                    </div>
+                    <div class="dato">
+                        <label for="">Peso del equipo lleno</label>
+                        <input class="input-data" disabled type="number" id="pesolleno">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="contenedor-boton">
+            <a onclick="calcularRecipiente()" class="boton">Calcular</a>
+        </div>
+    </main>
+
+    <header class="header sombra">
+        <h1 class="head-1">Calculo del indice corporal</h1>
+        <img src="./img/imc.png" widht="400" height="100" alt="Bascula">
+    </header>
+    
+    
+    <main class="contenedor sombra">
+        <!-- Datos de entrada -->
+        <h2 class="head-2">Datos de entrada</h2>
+        <div class="contenedor-2">
+            <fieldset>
+                <legend>Variables de entrada</legend>
+                <div class="datos">
+                    <div class="dato">
+                        <label for="">Peso (kg):</label>
+                        <input placeholder="Peso (kg)" class="input-data" type="number" name="" id="Peso">
+                    </div>
+                    <div class="dato">
+                        <label for="">Altura (m):</label>
+                        <input placeholder="Altura (m)" class="input-data" type="number" name="" id="Altura">
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+        <!-- Datos de salida -->
+        <h2 class="head-2">Datos de salida</h2>
+        <div class="masaCorporal-2">
+            <fieldset>
+                <legend>Variables de salida</legend>
+                <div class="datos">
+                    <div class="dato">
+                        <label for="">IMC (kg/m²):</label>
+                        <input placeholder="IMC (kg/m²)" class="input-data" disabled type="number" id="IMC">
+                    </div>
+                    <div class="dato">
+                        <label for="">Estado actual de acuerdo al IMC:</label>
+                        <input placeholder="Estado actual de acuerdo al IMC" class="input-data" disabled type="text" id="NivelDePeso">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="peso-boton">
+            <a onclick="calcularIMC()" class="boton">Calcular</a>
+        </div>
+    </main>
+
+    <header class="header sombra">
+        <h1 class="head-1">Conversor de temperaturas</h1>
+        <img src="./img/temperatura.png" widht="400" height="100" alt="Bascula">
+    </header>
+    
+    
+    <main class="contenedor sombra">
+        <!-- Datos de entrada -->
+        <h2 class="head-2">Datos de entrada</h2>
+        <div class="contenedor-2">
+            <fieldset>
+                <legend>Variables de entrada</legend>
+                <div class="datos-temp">
+                    <div class="dato">
+                        <label for="">Grados:</label>
+                        <input placeholder="Grados" class="input-data" type="number" name="" id="Grados">
+                    </div>
+                    <div class="dato">
+                        <label for="">de:</label>
+                        <select class="input-data" id="Entrada">
+                            <option value="1">°C</option>   
+                            <option value="2">°K</option>   
+                            <option value="3">°F</option>   
+                            <option value="4">R</option>    
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">a:</label>
+                        <select class="input-data" id="Salida">
+                            <option value="1">°C</option>   
+                            <option value="2">°K</option>   
+                            <option value="3">°F</option>   
+                            <option value="4">R</option>    
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!-- Datos de salida -->
+        <h2 class="head-2">Datos de salida</h2>
+        <div class="masaCorporal-2">
+            <fieldset>
+                <legend>Variables de salida</legend>
+                <div class="dato-temp">
+                    <div class="dato">
+                        <label for="">Temperatura:</label>
+                        <input placeholder="Resultado" class="input-data" disabled type="number" id="TEMP">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="peso-boton">
+            <a onclick="calcularTEMP()" class="boton">Calcular</a>
+        </div>
+    </main>
+
+
+
+
+    <div class="footer sombra">
+        <footer class="margen-footer">
+            Todos los derechos reservados - Héctor Ramos
+        </footer>
+    </div>
+
+    <script src="./js/design.js"></script>
+</body>
+</html>
